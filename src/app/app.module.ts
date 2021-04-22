@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MyUpperCasePipe } from './my-upper-case.pipe';
 import { RatingComponent } from './rating/rating.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { RatingComponent } from './rating/rating.component';
     LoginComponent,
     MyUpperCasePipe,
     RatingComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,6 @@ import { RatingComponent } from './rating/rating.component';
     FormsModule,
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }
