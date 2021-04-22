@@ -8,8 +8,13 @@ import { User } from '../models/user.model';
 })
 export class LoginComponent implements OnInit {
   users: User[] = [];
-
+  result = '';
   constructor() {
+  }
+
+  onClickedFromRating(event: string): void {
+    console.log('Received data from rating= ' + event);
+    this.result = 'Received data from rating= ' + event;
   }
 
   ngOnInit(): void {
