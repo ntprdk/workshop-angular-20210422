@@ -10,8 +10,8 @@
     <tbody>
       <tr *ngFor="let u of users">
         <th scope="row">{{u.id}}</th>
-        <td>{{u.firstName}}</td>
-        <td>{{u.lastName}}</td>
+        <td>{{u.firstName }}</td>
+        <td>{{u.lastName | myUpperCase: "!"}}</td>
         <td>{{u.email}}</td>
       </tr>
     </tbody>
