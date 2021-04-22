@@ -1,0 +1,6 @@
+<p>quiz works!</p>
+<!-- <button (click)="clickLike($event)" [ngClass]="isClickedLike ? 'like-button liked' : 'like-button'">Like | {{like}}</button>
+<button (click)="clickDislike($event)"  [ngClass]="isClickedDislike ? 'dislike-button disliked' : 'dislike-button'">DisLike | {{dislike}}</button> -->
+<button *ngFor="let b of buttons" (click)="click(b)" [ngClass]="b.isClick ? b.name+'-button ' + b.name + 'd' : b.name+'-button'">
+    {{b.name | titlecase}} | {{b.count}}
+</button>

@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { MyUpperCasePipe } from './my-upper-case.pipe';
 import { RatingComponent } from './rating/rating.component';
 import { MainComponent } from './main/main.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { MainComponent } from './main/main.component';
     MyUpperCasePipe,
     RatingComponent,
     MainComponent,
+    QuizComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
